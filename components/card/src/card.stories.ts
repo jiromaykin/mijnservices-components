@@ -47,3 +47,16 @@ export const WithDate: Story = {
     ></mijnservices-card>
   `,
 };
+
+export const WithSlotContent: Story = {
+  args: {
+    heading: 'Plan naam',
+    domain: 'Domein naam',
+    href: '#',
+  },
+  render: (args) => html`
+    <mijnservices-card heading=${args.heading} domain=${args.domain} href=${args.href}>
+      <button type="button">Bekijk details</button>
+    </mijnservices-card>
+  `,
+};

@@ -86,6 +86,13 @@ Domein naam Plan naam
 
 Components are built with [Lit](https://lit.dev), a lightweight library for web components. Lit is a dependency of each component package, not of the monorepo root.
 
+### Shadow DOM
+
+All components use Shadow DOM (the Lit default). This means component styles
+are fully isolated and cannot be overridden with external CSS selectors.
+Theming is done exclusively via CSS custom properties (design tokens),
+for example `--mijnservices-card-background-color`.
+
 ### React wrapper
 
 The React variant is generated with [`@lit/react`](https://lit.dev/docs/frameworks/react/), which wraps the web component in a type-safe React component. React itself is a peer dependency — consumers provide their own React installation.

@@ -17,11 +17,11 @@ export class MijnservicesCard extends LitElement {
       <div class="mijnservices-card">
         <p class="mijnservices-card__domain">${this.domain}</p>
         <p class="mijnservices-card__heading">${this.heading}</p>
+        <slot></slot>
         <div class="mijnservices-card__footer">
           ${this.date
             ? html` <time class="mijnservices-card__date" datetime="${this.dateTime}"> ${this.date} </time> `
             : html`<span></span>`}
-
           <a class="mijnservices-card__action" href="${this.href}" aria-label="${this.heading}">
             <svg
               class="mijnservices-card__arrow"
