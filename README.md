@@ -114,7 +114,6 @@ Tokens follow the pattern `--mijnservices-{component}-{property}`, for example:
 
 Each component has its own `vite.config.ts` for building. Vite is a build tool — it is not shipped to consumers. The config builds both the web component and the React wrapper as separate ES module entry points, with Lit and React marked as external dependencies.
 
-
 ## Contribute
 
 Use `pnpm format` to run prettier before committing.
