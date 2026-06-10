@@ -1,0 +1,10 @@
+{
+  "name": "@mijnservices/card",
+  "version": "0.1.0",
+  "description": "Card component for MijnServices, built on NL Design System architecture",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
+}
