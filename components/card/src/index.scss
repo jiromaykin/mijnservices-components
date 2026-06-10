@@ -1,0 +1,30 @@
+@use 'mixin' as *;
+
+.mijnservices-card {
+  @include mijnservices-card;
+}
+
+.mijnservices-card__action {
+  @include mijnservices-card__action;
+  @include mijnservices-card__action--overlay;
+}
+
+.mijnservices-card__domain {
+  @include mijnservices-card__domain;
+}
+
+.mijnservices-card__heading {
+  @include mijnservices-card__heading;
+}
+
+.mijnservices-card__footer {
+  @include mijnservices-card__footer;
+}
+
+.mijnservices-card__date {
+  @include mijnservices-card__date;
+}
+
+.mijnservices-card__arrow {
+  @include mijnservices-card__arrow;
+}
