@@ -4,10 +4,15 @@
   "description": "Card component for MijnServices, built on NL Design System architecture",
   "license": "EUPL-1.2",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./css": "./dist/card.css"
+  },
+  "files": ["dist", "tokens.json"],
+  "scripts": {
+    "build": "vite build"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "lit": "^3.3.3"
   }
 }
