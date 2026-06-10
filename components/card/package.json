@@ -6,6 +6,7 @@
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
+    "./react": "./dist/card.react.js",
     "./css": "./dist/card.css"
   },
   "files": [
@@ -17,5 +18,13 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "react": "^19.2.7",
+    "vite-plugin-dts": "^5.0.2"
   }
 }

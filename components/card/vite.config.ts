@@ -6,11 +6,12 @@ export default defineConfig({
     lib: {
       entry: {
         index: 'src/index.ts',
+        'card.react': 'src/card.react.tsx',
       },
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['lit', /^lit\//],
+      external: ['lit', /^lit\//, 'react', '@lit/react'],
     },
   },
   plugins: [dts({ include: ['src'] })],
