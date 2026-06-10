@@ -1,9 +1,9 @@
 import React from 'react';
 import { createComponent } from '@lit/react';
-import { MijnservicesCard } from './card.js';
+import { MijnservicesPlanCard } from './plan-card.js';
 
 export const Card = createComponent({
-  tagName: 'mijnservices-card',
-  elementClass: MijnservicesCard,
+  tagName: 'mijnservices-plan-card',
+  elementClass: MijnservicesPlanCard,
   react: React,
 });

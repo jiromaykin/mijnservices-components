@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
-import './card.js';
+import './plan-card.js';
 
 const meta: Meta = {
-  title: 'Components/Card',
-  component: 'mijnservices-card',
+  title: 'Components/PlanCard',
+  component: 'mijnservices-plan-card',
   tags: ['autodocs'],
   argTypes: {
     heading: { control: 'text' },
@@ -25,7 +25,7 @@ export const Default: Story = {
     href: '#',
   },
   render: (args) => html`
-    <mijnservices-card heading=${args.heading} domain=${args.domain} href=${args.href}></mijnservices-card>
+    <mijnservices-plan-card heading=${args.heading} domain=${args.domain} href=${args.href}></mijnservices-plan-card>
   `,
 };
 
@@ -38,13 +38,13 @@ export const WithDate: Story = {
     dateTime: '2026-06-10',
   },
   render: (args) => html`
-    <mijnservices-card
+    <mijnservices-plan-card
       heading=${args.heading}
       domain=${args.domain}
       href=${args.href}
       date=${args.date}
       date-time=${args.dateTime}
-    ></mijnservices-card>
+    ></mijnservices-plan-card>
   `,
 };
 
@@ -55,8 +55,8 @@ export const WithSlotContent: Story = {
     href: '#',
   },
   render: (args) => html`
-    <mijnservices-card heading=${args.heading} domain=${args.domain} href=${args.href}>
+    <mijnservices-plan-card heading=${args.heading} domain=${args.domain} href=${args.href}>
       <button type="button">Bekijk details</button>
-    </mijnservices-card>
+    </mijnservices-plan-card>
   `,
 };

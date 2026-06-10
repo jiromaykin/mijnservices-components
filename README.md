@@ -10,7 +10,7 @@ This is a pnpm monorepo. Each component lives in its own package under `componen
 ```
 mijnservices-components/
 ├── components/
-│   └── card/          → @mijnservices/card
+│   └── card/          → @mijnservices/plan-card
 ├── .storybook/        → Storybook configuration
 ├── pnpm-workspace.yaml
 └── package.json
@@ -41,21 +41,21 @@ pnpm build
 Build an individual component:
 
 ```bash
-pnpm --filter @mijnservices/card build
+pnpm --filter @mijnservices/plan-card build
 ```
 
 Each component builds to its own `dist/` folder with:
 
 - `dist/index.js` — the web component
-- `dist/card.react.js` — the React wrapper
-- `dist/card.css` — the CSS, separately importable without the web component
+- `dist/plan-card.react.js` — the React wrapper
+- `dist/plan-card.css` — the CSS, separately importable without the web component
 
 ## Consuming components
 
 ### Web component
 
 ```js
-import "@mijnservices/card";
+import "@mijnservices/plan-card";
 ```
 
 ```html
@@ -65,7 +65,7 @@ import "@mijnservices/card";
 ### React
 
 ```tsx
-import { Card } from "@mijnservices/card/react";
+import { Card } from "@mijnservices/plan-card/react";
 ```
 
 ### CSS only
@@ -73,7 +73,7 @@ import { Card } from "@mijnservices/card/react";
 If you want to use your own HTML markup with our styles:
 
 ```js
-import "@mijnservices/card/css";
+import "@mijnservices/plan-card/css";
 ```
 
 ```html
@@ -91,7 +91,7 @@ Components are built with [Lit](https://lit.dev), a lightweight library for web 
 All components use Shadow DOM (the Lit default). This means component styles
 are fully isolated and cannot be overridden with external CSS selectors.
 Theming is done exclusively via CSS custom properties (design tokens),
-for example `--mijnservices-card-background-color`.
+for example `--mijnservices-plan-card-background-color`.
 
 ### React wrapper
 
@@ -102,7 +102,7 @@ The React variant is generated with [`@lit/react`](https://lit.dev/docs/framewor
 Each component ships:
 
 - `_mixin.scss` — SCSS mixins that can be applied to any selector, including Shadow DOM (`:host`)
-- `index.scss` — ready-to-use CSS classes (`.mijnservices-card`, `.mijnservices-card__heading` etc.)
+- `index.scss` — ready-to-use CSS classes (`.mijnservices-plan-card`, `.mijnservices-plan-card__heading` etc.)
 
 This follows the [NL Design System CSS conventions](https://nldesignsystem.nl/handboek/developer/css-conventie/).
 
@@ -113,8 +113,8 @@ Each component ships a `tokens.json` with metadata about its design tokens, foll
 Tokens follow the pattern `--mijnservices-{component}-{property}`, for example:
 
 ```css
---mijnservices-card-background-color
---mijnservices-card-heading-font-size
+--mijnservices-plan-card-background-color
+--mijnservices-plan-card-heading-font-size
 ```
 
 ### Vite

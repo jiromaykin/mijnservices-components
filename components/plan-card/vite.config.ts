@@ -6,7 +6,7 @@ export default defineConfig({
     lib: {
       entry: {
         index: 'src/index.ts',
-        'card.react': 'src/card.react.tsx',
+        'card.react': 'src/plan-card.react.tsx',
       },
       formats: ['es'],
     },

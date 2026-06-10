@@ -2,8 +2,8 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import styles from './index.scss?inline';
 
-@customElement('mijnservices-card')
-export class MijnservicesCard extends LitElement {
+@customElement('mijnservices-plan-card')
+export class MijnservicesPlanCard extends LitElement {
   static styles = unsafeCSS(styles);
 
   @property() heading = '';
@@ -14,17 +14,17 @@ export class MijnservicesCard extends LitElement {
 
   render() {
     return html`
-      <div class="mijnservices-card">
-        <p class="mijnservices-card__domain">${this.domain}</p>
-        <p class="mijnservices-card__heading">${this.heading}</p>
+      <div class="mijnservices-plan-card">
+        <p class="mijnservices-plan-card__domain">${this.domain}</p>
+        <p class="mijnservices-plan-card__heading">${this.heading}</p>
         <slot></slot>
-        <div class="mijnservices-card__footer">
+        <div class="mijnservices-plan-card__footer">
           ${this.date
-            ? html` <time class="mijnservices-card__date" datetime="${this.dateTime}"> ${this.date} </time> `
+            ? html` <time class="mijnservices-plan-card__date" datetime="${this.dateTime}"> ${this.date} </time> `
             : html`<span></span>`}
-          <a class="mijnservices-card__action" href="${this.href}" aria-label="${this.heading}">
+          <a class="mijnservices-plan-card__action" href="${this.href}" aria-label="${this.heading}">
             <svg
-              class="mijnservices-card__arrow"
+              class="mijnservices-plan-card__arrow"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
