@@ -23,7 +23,8 @@ export class MijnservicesCard extends LitElement {
               ${this.date}
             </time>
           ` : html`<span></span>`}
-          
+            
+          <a
             class="mijnservices-card__action"
             href="${this.href}"
             aria-label="${this.heading}"
