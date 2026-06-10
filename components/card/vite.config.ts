@@ -13,7 +13,5 @@ export default defineConfig({
       external: ['lit', /^lit\//],
     },
   },
-  plugins: [
-    dts({ include: ['src'] }),
-  ],
+  plugins: [dts({ include: ['src'] })],
 });

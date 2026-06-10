@@ -8,7 +8,10 @@
     ".": "./dist/index.js",
     "./css": "./dist/card.css"
   },
-  "files": ["dist", "tokens.json"],
+  "files": [
+    "dist",
+    "tokens.json"
+  ],
   "scripts": {
     "build": "vite build"
   },

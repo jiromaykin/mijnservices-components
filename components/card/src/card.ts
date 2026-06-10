@@ -18,19 +18,23 @@ export class MijnservicesCard extends LitElement {
         <p class="mijnservices-card__domain">${this.domain}</p>
         <p class="mijnservices-card__heading">${this.heading}</p>
         <div class="mijnservices-card__footer">
-          ${this.date ? html`
-            <time class="mijnservices-card__date" datetime="${this.dateTime}">
-              ${this.date}
-            </time>
-          ` : html`<span></span>`}
-            
-          <a
-            class="mijnservices-card__action"
-            href="${this.href}"
-            aria-label="${this.heading}"
-          >
-            <svg class="mijnservices-card__arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path fill="currentColor" d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"></path>
+          ${this.date
+            ? html` <time class="mijnservices-card__date" datetime="${this.dateTime}"> ${this.date} </time> `
+            : html`<span></span>`}
+
+          <a class="mijnservices-card__action" href="${this.href}" aria-label="${this.heading}">
+            <svg
+              class="mijnservices-card__arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
+              ></path>
             </svg>
           </a>
         </div>

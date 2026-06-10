@@ -25,11 +25,7 @@ export const Default: Story = {
     href: '#',
   },
   render: (args) => html`
-    <mijnservices-card
-      heading=${args.heading}
-      domain=${args.domain}
-      href=${args.href}
-    ></mijnservices-card>
+    <mijnservices-card heading=${args.heading} domain=${args.domain} href=${args.href}></mijnservices-card>
   `,
 };
 

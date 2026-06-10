@@ -19,7 +19,7 @@
 
 @mixin mijnservices-card__action--overlay {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
   }
