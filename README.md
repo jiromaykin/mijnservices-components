@@ -1,6 +1,7 @@
 # mijnservices-components
 
-Work in Progress: MijnServices web components based on the NL Design System architecture.
+~~Work in Progress: MijnServices web components based on the NL Design System architecture.~~
+This repo is no longer maintained and has moved to: https://github.com/maykinmedia/mijnservices-components
 This project is free and open-source software licensed under the European Union Public License (EUPL) v1.2.
 
 ## Structure
